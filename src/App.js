@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import Home from "./components/Home";
 
 function App() {
+  const footerStyles = {
+    padding: "20px",
+    textAlign: "center",
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <Header />
+      <Home />
+      <div className="footer" style={footerStyles}>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This landing page is only created for learning purpose.Don't file any
+          copy rights.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p style={{ marginTop: "1rem" }}>@arunteja</p>
+      </div>
     </div>
   );
 }
